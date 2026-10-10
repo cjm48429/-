@@ -1,19 +1,19 @@
 #include <stdio.h>
 int main(){
     for(; ;){
-    	printf("\n===== ¼òÒ×ÊıÑ§¹¤¾ß =====\n");
-        printf("1. ÀÛ¼Ó¼ÆËã\n");
-        printf("2. ½×³Ë¼ÆËã\n");
-        printf("3. ÃİÔËËã\n");
-        printf("4. ÆæÅ¼ÅĞ¶Ï\n");
-        printf("5.  ÍË³ö\n");
+    	printf("\n===== ç®€æ˜“æ•°å­¦å·¥å…· =====\n");
+        printf("1. ç´¯åŠ è®¡ç®—\n");
+        printf("2. é˜¶ä¹˜è®¡ç®—\n");
+        printf("3. å¹‚è¿ç®—\n");
+        printf("4. å¥‡å¶åˆ¤æ–­\n");
+        printf("5.  é€€å‡º\n");
         printf("****************\n");
-        printf("ÇëÊäÈëÑ¡Ïî£º");
+        printf("è¯·è¾“å…¥é€‰é¡¹ï¼š");
     	int type;
     	scanf("%d",&type);
 		switch(type){
 			case 1:{
-				printf("ÕâÀïÊÇÀÛ¼Ó¼ÆËã\nÇëÊäÈëÄãµÄÊı×Ö\n");
+				printf("è¿™é‡Œæ˜¯ç´¯åŠ è®¡ç®—\nè¯·è¾“å…¥ä½ çš„æ•°å­—\n");
 				int n;
 				scanf("%d",&n);
 				int i=1;
@@ -21,29 +21,29 @@ int main(){
 				while(i<=n){
 					sum+=i;
 					i++;
-				} printf("½á¹ûÊÇ %d",sum);
+				} printf("ç»“æœæ˜¯ %d",sum);
 				break;
 			}
 		    case 2:	{
-		    	printf("ÕâÀïÊÇ½×³Ë¼ÆËã\nÇëÊäÈëÄãµÄÊı×Ö\n");
+		    	printf("è¿™é‡Œæ˜¯é˜¶ä¹˜è®¡ç®—\nè¯·è¾“å…¥ä½ çš„æ•°å­—\n");
 		    	int a;
 		    	scanf("%d",&a);
 		    	int b=1;
 		    	int sum2=1;
 		    	if(a<0){
-		    		printf("¸ºÊıÃ»ÓĞ½×³Ë£¡\n");
+		    		printf("è´Ÿæ•°æ²¡æœ‰é˜¶ä¹˜ï¼\n");
 				}
 				else if(a>0){
 		    	while(a>0&&b<=a){
 		    		sum2*=b;
 		    		b++;
 				}
-				printf("½Y¹ûÊÇ %d",sum2);
+				printf("çµæœæ˜¯ %d",sum2);
 			}
 			}
 				break;
 			case 3:{
-				printf("ÕâÀïÊÇÃİÔËËã\nÓÉÓÚ¸öÈË¼¼Êõ²»ĞĞ£¬¼ÆËã½á¹û¹ı´ó»áµ¼ÖÂ¾«¶ÈÓĞÏŞ\nÇëÊäÈëÄãµÄÊı×Ö\n");
+				printf("è¿™é‡Œæ˜¯å¹‚è¿ç®—\nç”±äºä¸ªäººæŠ€æœ¯ä¸è¡Œï¼Œè®¡ç®—ç»“æœè¿‡å¤§ä¼šå¯¼è‡´ç²¾åº¦æœ‰é™\nè¯·è¾“å…¥ä½ çš„æ•°å­—\n");
 				double m=0;
 				double n=0;
 				double p=1;
@@ -58,30 +58,30 @@ int main(){
 					p=1;
 				}
 				else{
-					printf("åeÕ`£¡\n");
+					printf("éŒ¯èª¤ï¼\n");
 					break;
 				}
-				printf("½á¹ûÊÇ %.01f",p);
+				printf("ç»“æœæ˜¯ %.01f",p);
 				break;
 			}
 			
 	        case 4:{
-	    	printf("´Ë ‘ÆæÅ¼ÅĞ”à\nÇëÊäÈëÄãµÄÊı×Ö\n");
+	    	printf("æ­¤çˆ²å¥‡å¶åˆ¤æ–·\nè¯·è¾“å…¥ä½ çš„æ•°å­—\n");
 	    	int j;
 	    	scanf("%d",&j);
 	    	if(j%2==0){
-	    		printf("Å¼”µ\n");
+	    		printf("å¶æ•¸\n");
 			
 			}else{
-			printf("Ææ”µ\n");
+			printf("å¥‡æ•¸\n");
 			}break;
         }
             case 5:{
-             printf("ÔÙ¼û\n");
+             printf("å†è§\n");
               return 0;
         }
             default:{
-			printf("ÎŞĞ§Ñ¡Ïî£¬ÇëÖØĞÂÊäÈë\n");
+			printf("æ— æ•ˆé€‰é¡¹ï¼Œè¯·é‡æ–°è¾“å…¥\n");
 				break;
 			}
 			
